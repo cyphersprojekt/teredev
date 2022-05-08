@@ -15,17 +15,23 @@
     src: url(ttf/mplus-1m-light.ttf);
 }
 
+a:link, a:visited,  a:hover, a:active
+{
+    color: #fff;
+    text-decoration: none;
+}
 
 .teredev-titulo {
     font-family: m1plus-light;
     color: #fff;
+    font-size: 3em;
 
  }
 
-    .teredev-subtitulo {
-        font-family: m1plus-regular;
-        color: #8c8c8c;
-    }
+.teredev-subtitulo {
+    font-family: m1plus-regular;
+    color: #8c8c8c;
+  }
 
   html, body {
     margin-top: 3%;
