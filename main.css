@@ -1,0 +1,64 @@
+@font-face {
+    font-family: m1plus-regular;
+    src: url(ttf/mplus-1m-regular.ttf);
+}
+
+@font-face {
+    font-family: m1plus-bold;
+    src: url(ttf/mplus-1m-bold.ttf);
+}
+
+@font-face {
+    font-family: m1plus-medium;
+    src: url(ttf/mplus-1m-medium.ttf);
+}
+
+@font-face {
+    font-family: m1plus-light;
+    src: url(ttf/mplus-1m-light.ttf);
+}
+
+
+.teredev-titulo {
+    font-family: m1plus-light;
+    color: #fff;
+
+ }
+
+    .teredev-subtitulo {
+        font-family: m1plus-regular;
+        color: #8c8c8c;
+    }
+
+  html, body {
+    margin-top: 3%;
+    margin-left: 3%;
+  }  
+  .scroller {
+    height: 1.2em;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    width: 10em;
+  }
+  .scroller > span {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+    
+  }
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+  }
+
