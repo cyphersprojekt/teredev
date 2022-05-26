@@ -28,6 +28,38 @@ a:link, a:visited,  a:hover, a:active
 
  }
 
+.teredev-items {
+  font-family: m1plus-light;
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 2%;
+}
+
+.proyect {
+  color: #fff;
+  margin-top: 2%;
+
+  width: 200px;
+  height: 200px;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  margin-right: 3%;
+  float: left;  
+}
+
+.proyectLogo {
+  width: 100%;
+  height: 100%;
+}
+
+.proyectName {
+  font-family: m1plus-light;
+  color: #fff;
+  font-size: 1em;
+  margin-top: 2%;
+  text-align: center;
+}
+
 .teredev-subtitulo {
     font-family: m1plus-regular;
     color: #8c8c8c;
@@ -42,12 +74,12 @@ a:link, a:visited,  a:hover, a:active
     line-height: 1.2em;
     position: relative;
     overflow: hidden;
-    width: 10em;
+    width: 11em;
   }
   .scroller > span {
     position: absolute;
     top: 0;
-    animation: slide 5s infinite;
+    animation: slide 6s infinite;
     
   }
   @keyframes slide {
@@ -55,13 +87,13 @@ a:link, a:visited,  a:hover, a:active
       top: 0;
     }
     25% {
-      top: -1.2em;
+      top: -1.4em;
     }
     50% {
-      top: -2.4em;
+      top: -2.6em;
     }
     75% {
-      top: -3.6em;
+      top: -3.8em;
     }
   }
 
