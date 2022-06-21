@@ -1,21 +1,51 @@
 let proyects = ["proyectA", "proyectB", "proyectC"]
-let slideshowContainer = document.querySelector('.slideshow-container')
+let slideshowContainer = document.querySelector('.slideshow-container');
 
-for(const proyect of proyects ){
-    const proyectSection = document.createElement('div')
-    proyectSection.setAttribute('class', 'proyect')
-    
-    const proyectLogo = document.createElement('img')
-    proyectLogo.setAttribute('class', 'proyectLogo')
-    let logoPath = 'img/' + proyect + ".jpg"
-    proyectLogo.setAttribute('src', logoPath)
-    proyectSection.appendChild(proyectLogo)
+let active = proyects[0];
+let proyectNumber = 0
 
+const proyectsAmount = proyects.length;
+const proyectImage = document.querySelector('.proyectImage');
+const proyectName = document.querySelector('.proyectName');
 
-    const proyectName = document.createElement('p')
-    proyectName.setAttribute('class', 'proyectName')
-    proyectName.textContent = proyect
-    proyectSection.appendChild(proyectName)
+const nextProyectBtn = document.querySelector('.next');
+const previousProyectBtn = document.querySelector('.prev');
 
-    slideshowContainer.appendChild(proyectSection)
+function setActiveProyect() {
+    let imagePath = 'img/' + active + '.jpg';
+    proyectImage.setAttribute('src', imagePath);
+    proyectName.textContent = active;
 }
+setActiveProyect()
+
+function nextProyect(){
+    if(proyectNumber < proyectsAmount - 1){
+        proyectNumber++;
+        active = proyects[proyectNumber];
+        setActiveProyect(); 
+    }
+    else
+    {
+        proyectNumber = 0;
+        active = proyects[proyectNumber];
+        setActiveProyect();
+    }
+}
+
+function previousProyect(){
+    if(proyectNumber > 0){
+        proyectNumber--;
+        active = proyects[proyectNumber];
+        setActiveProyect(); 
+    }
+    else
+    {
+        proyectNumber = proyectsAmount - 1;
+        active = proyects[proyectNumber];
+        setActiveProyect();
+    }
+}
+
+
+nextProyectBtn.addEventListener('click', nextProyect);
+previousProyectBtn.addEventListener('click', previousProyect);

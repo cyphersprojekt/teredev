@@ -26,7 +26,7 @@ a:link, a:visited,  a:hover, a:active
     color: #fff;
     font-size: 3em;
 
- }
+}
 
 .teredev-items {
   font-family: m1plus-light;
@@ -35,7 +35,11 @@ a:link, a:visited,  a:hover, a:active
   margin-top: 2%;
 }
 
-.proyect {
+.slideshow-container{
+  position: relative;
+}
+
+.proyectItem {
   color: #fff;
   margin-top: 2%;
 
@@ -47,7 +51,7 @@ a:link, a:visited,  a:hover, a:active
   float: left;  
 }
 
-.proyectLogo {
+.proyectImage {
   width: 100%;
   height: 100%;
 }
@@ -59,6 +63,38 @@ a:link, a:visited,  a:hover, a:active
   margin-top: 2%;
   text-align: center;
 }
+.prev {
+  cursor: pointer;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
 
 .teredev-subtitulo {
     font-family: m1plus-regular;
